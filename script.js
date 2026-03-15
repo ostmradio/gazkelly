@@ -1,3 +1,8 @@
+//Mobile redirect
+if(window.innerWidth <= 768 && !window.location.pathname.startsWith("/m")){
+    window.location.href = "/m";
+}
+
 const header = document.getElementById("siteHeader");
 const navToggle = document.getElementById("navToggle");
 const siteNav = document.getElementById("siteNav");
