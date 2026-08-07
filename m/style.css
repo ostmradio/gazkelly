@@ -38,6 +38,88 @@ a {
     text-decoration: none;
 }
 
+.site-notice {
+    position: fixed;
+    top: 0.6rem;
+    left: 50%;
+    z-index: 2000;
+    width: min(calc(100% - 1.25rem), 680px);
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.7rem 0.7rem 0.7rem 0.8rem;
+    background: rgba(20, 20, 20, 0.98);
+    border: 1px solid rgba(255, 79, 146, 0.55);
+    border-radius: 15px;
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.6);
+    transform: translate(-50%, calc(-100% - 2rem));
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.45s ease, opacity 0.3s ease, visibility 0.45s;
+}
+
+.site-notice.show {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.site-notice-content {
+    min-width: 0;
+    flex: 1;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.55rem;
+    line-height: 1.25;
+}
+
+.site-notice-label {
+    padding: 0.25rem 0.45rem;
+    color: #080808;
+    background: var(--accent);
+    border-radius: 999px;
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.site-notice-text {
+    font-size: clamp(0.72rem, 3.2vw, 0.88rem);
+    font-weight: 700;
+}
+
+.site-notice-arrow {
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+.site-notice-close {
+    flex: 0 0 auto;
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0;
+    color: var(--muted);
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.site-notice-close:hover,
+.site-notice-content:hover .site-notice-text {
+    color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-notice {
+        transition: none;
+    }
+}
+
 .container {
     width: min(calc(100% - 1.5rem), var(--max-width));
     margin: 0 auto;
@@ -156,9 +238,14 @@ a {
 .hero-content h1,
 .subpage-hero h1 {
     margin: 0;
-    font-size: clamp(2.4rem, 12vw, 4.2rem);
+    font-size: clamp(2.1rem, 11vw, 4.2rem);
     line-height: 0.92;
     letter-spacing: -0.04em;
+}
+
+.hero-line {
+    display: block;
+    white-space: nowrap;
 }
 
 .hero-copy,
@@ -451,4 +538,8 @@ a {
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.hero-middle-line {
+    color: #b8b8b8;
 }
