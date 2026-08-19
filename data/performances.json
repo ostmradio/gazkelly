@@ -17,8 +17,17 @@
     "venue": "Gullivers",
     "location": "109 Oldham St, Manchester M4 1LW",
     "details": "Doors open: 7pm",
-    "ticketUrl": "",
     "image": "/img/Promo_Gullivers.jpg",
+    "published": true
+  },
+  {
+    "id": "d2dfb693-fda6-4458-9dec-33cffc9333b7",
+    "title": "Glaston-Bury",
+    "date": "2026-08-31T12:00",
+    "venue": "Glaston-Bury",
+    "location": "Bury Town Centre, Bury, Lancashire",
+    "ticketUrl": "https://www.glaston-bury.com/tickets/",
+    "image": "/img/glaston-bury.jpg",
     "published": true
   }
 ]
