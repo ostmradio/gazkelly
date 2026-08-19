@@ -6,6 +6,7 @@ The files below are the live website's CMS-managed content and must be treated a
 
 - `data/performances.json`
 - `data/releases.json`
+- `data/notification.json`
 
 Do not edit, reformat, rename, replace, delete, or generate these files unless the user explicitly asked to change the live CMS content itself.
 

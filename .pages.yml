@@ -90,3 +90,37 @@ content:
         label: Show on website
         type: boolean
         default: true
+
+  - name: notification
+    label: Website Notification
+    type: file
+    path: data/notification.json
+    format: json
+    fields:
+      - name: enabled
+        label: Show notification
+        type: boolean
+        default: false
+        description: Turn this on to display the notification across the website.
+      - name: id
+        label: Notification ID
+        type: string
+        required: true
+        description: Change this when publishing a new notification so visitors who dismissed the previous one will see it.
+      - name: label
+        label: Short label
+        type: string
+        description: Optional short text such as NEW or BUY NOW!
+      - name: message
+        label: Message
+        type: text
+        required: true
+      - name: url
+        label: Link
+        type: string
+        description: Optional page to open when the notification is selected.
+      - name: delay
+        label: Delay in milliseconds
+        type: number
+        default: 500
+        description: 500 displays the notification half a second after the page loads.
