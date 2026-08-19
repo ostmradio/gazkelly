@@ -1,17 +1,6 @@
 [
   {
-    "id": "example-upcoming-performance",
-    "title": "Example upcoming performance",
-    "date": "2026-12-31T19:30",
-    "venue": "Example venue",
-    "location": "Manchester",
-    "details": "Test data only — edit or delete this entry in Pages CMS.",
-    "ticketUrl": "",
-    "image": "/img/Promo_JackEdge.jpg",
-    "published": true
-  },
-  {
-    "id": "jack-edge-castle-hotel-2026",
+    "id": "4d191852-36eb-4459-8340-93fa8bddb481",
     "title": "Supporting Jack Edge",
     "date": "2026-08-14T19:30",
     "venue": "The Castle Hotel",
@@ -22,14 +11,24 @@
     "published": true
   },
   {
-    "id": "constant-smiles-gullivers-2026",
+    "id": "136bcba6-1239-4e23-b4d0-e89309489866",
     "title": "Opening for Constant Smiles",
     "date": "2026-03-11T19:00",
     "venue": "Gullivers",
     "location": "Manchester",
     "details": "Doors open: 7pm",
-    "ticketUrl": "",
     "image": "/img/Promo_Gullivers.jpg",
+    "published": true
+  },
+  {
+    "id": "fce0f838-d6d9-4045-8c8e-3b3a87a2fc1d",
+    "title": "Glaston-Bury",
+    "date": "2026-08-31T12:00",
+    "venue": "Glaston-Bury",
+    "location": "Bury Town Centre",
+    "details": "Test demo for the glaston bury performance",
+    "ticketUrl": "https://www.glaston-bury.com/tickets/",
+    "image": "/img/glaston-bury.jpg",
     "published": true
   }
 ]
