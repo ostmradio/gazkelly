@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Content Test | Gaz Kelly</title>
+    <link rel="stylesheet" href="/test/style.css" />
+</head>
+<body>
+<header class="test-header">
+    <a href="/" class="logo">Gaz Kelly</a>
+    <span class="test-badge">Test page</span>
+</header>
+
+<main>
+    <section class="test-hero">
+        <p class="eyebrow">CMS proof of concept</p>
+        <h1 id="pageHeading">Loading content…</h1>
+        <p id="pageIntroduction" class="introduction"></p>
+        <div id="loadStatus" class="load-status" role="status">Loading JSON data…</div>
+    </section>
+
+    <section class="content-section">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Live</p>
+                <h2>Upcoming performances</h2>
+            </div>
+            <span id="upcomingCount" class="count"></span>
+        </div>
+        <div id="upcomingPerformances" class="performance-grid"></div>
+    </section>
+
+    <section class="content-section">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Archive</p>
+                <h2>Performance history</h2>
+            </div>
+            <span id="pastCount" class="count"></span>
+        </div>
+        <div id="pastPerformances" class="history-list"></div>
+    </section>
+
+    <section class="content-section">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Music</p>
+                <h2>Releases</h2>
+            </div>
+            <span id="releaseCount" class="count"></span>
+        </div>
+        <div id="releases" class="release-grid"></div>
+    </section>
+</main>
+
+<template id="performanceTemplate">
+    <article class="performance-card">
+        <img class="performance-image" alt="" />
+        <div class="card-body">
+            <time class="performance-date"></time>
+            <h3 class="performance-title"></h3>
+            <p class="performance-venue"></p>
+            <p class="performance-details muted"></p>
+            <a class="performance-link button" target="_blank" rel="noopener noreferrer">Get tickets</a>
+        </div>
+    </article>
+</template>
+
+<template id="historyTemplate">
+    <article class="history-item">
+        <time class="history-date"></time>
+        <div>
+            <h3 class="history-title"></h3>
+            <p class="history-venue muted"></p>
+            <p class="history-details muted"></p>
+        </div>
+    </article>
+</template>
+
+<template id="releaseTemplate">
+    <article class="release-card">
+        <a class="release-link" target="_blank" rel="noopener noreferrer">
+            <img class="release-artwork" alt="" />
+        </a>
+        <p class="release-type eyebrow"></p>
+        <h3 class="release-title"></h3>
+        <time class="release-date muted"></time>
+    </article>
+</template>
+
+<script src="/test/script.js"></script>
+</body>
+</html>

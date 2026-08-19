@@ -1,0 +1,101 @@
+media:
+  input: img
+  output: /img
+  categories: [image]
+  rename: safe
+
+content:
+  - name: test_performances
+    label: Test Performances
+    type: file
+    path: test/data/performances.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: ID
+        type: uuid
+      - name: title
+        label: Performance title
+        type: string
+        required: true
+      - name: date
+        label: Date and time
+        type: date
+        required: true
+        options:
+          time: true
+          format: "yyyy-MM-dd'T'HH:mm"
+      - name: venue
+        label: Venue
+        type: string
+        required: true
+      - name: location
+        label: Location
+        type: string
+        required: true
+      - name: details
+        label: Additional details
+        type: text
+      - name: ticketUrl
+        label: Ticket link
+        type: string
+      - name: image
+        label: Promotional image
+        type: image
+      - name: published
+        label: Show on test page
+        type: boolean
+        default: true
+
+  - name: test_releases
+    label: Test Music Releases
+    type: file
+    path: test/data/releases.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: ID
+        type: uuid
+      - name: title
+        label: Release title
+        type: string
+        required: true
+      - name: releaseType
+        label: Release type
+        type: string
+        required: true
+      - name: releaseDate
+        label: Release date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: artwork
+        label: Artwork
+        type: image
+        required: true
+      - name: listenUrl
+        label: Streaming link
+        type: string
+        required: true
+      - name: published
+        label: Show on test page
+        type: boolean
+        default: true
+
+  - name: test_settings
+    label: Test Page Settings
+    type: file
+    path: test/data/settings.json
+    format: json
+    fields:
+      - name: heading
+        label: Page heading
+        type: string
+        required: true
+      - name: introduction
+        label: Introduction
+        type: text
+        required: true
