@@ -440,6 +440,42 @@ a {
     padding: 0.8rem;
 }
 
+.cms-performance-list {
+    display: grid;
+    gap: 1.3rem;
+}
+
+.live-page-card .live-poster img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.live-page-card .btn {
+    margin-top: 1rem;
+}
+
+.cms-live-empty {
+    padding: 1.4rem;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: var(--panel);
+}
+
+.cms-live-empty h3 {
+    margin: 0.5rem 0;
+    font-size: 1.35rem;
+}
+
+.cms-live-empty p:last-child,
+.cms-data-message {
+    color: var(--muted);
+}
+
+.cms-data-error {
+    color: #ff8aae;
+}
+
 .live-text {
     max-width: 100%;
 }

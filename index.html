@@ -72,56 +72,8 @@
                 <h2>Music</h2>
             </div>
 
-            <div class="release-grid">
-                <article class="release-card reveal">
-                    <a href="https://open.spotify.com/album/2ijFGqhEBgQ9jeB5KqhDvt" target="_blank" rel="noopener noreferrer">
-                        <img src="/img/SomeStoriesDontHaveHappyEndings.jpg" alt="Gaz Kelly performing live" />
-                    </a>
-                    <div class="release-meta">
-                        <h3>Some Stories Don't Have Happy Endings</h3>
-                        <p>Debut album · 2026</p>
-                    </div>
-                </article>
-
-                <article class="release-card reveal">
-                    <a href="https://open.spotify.com/track/3t65ZHJdxx6SIgHbYwYMH2?si=b155d65b777144b9" target="_blank" rel="noopener noreferrer">
-                        <img src="/img/Photogenic.jpg" alt="Photogenic artwork" />
-                    </a>
-                    <div class="release-meta">
-                        <h3>Photogenic</h3>
-                        <p>Single · 2025</p>
-                    </div>
-                </article>
-
-                <article class="release-card reveal">
-                    <a href="https://open.spotify.com/track/0hOOb2whCNq4bvLhPZ2S3V?si=0844bfb461e84b34" target="_blank" rel="noopener noreferrer">
-                        <img src="/img/555_Caffinated.jpg" alt="555 Caffeinated Version artwork" />
-                    </a>
-                    <div class="release-meta">
-                        <h3>555 - Caffinated Version</h3>
-                        <p>Single · 2025</p>
-                    </div>
-                </article>
-
-                <article class="release-card reveal">
-                    <a href="https://open.spotify.com/track/4V0Dj5sNnpXsebBWUWZYNb" target="_blank" rel="noopener noreferrer">
-                        <img src="/img/555_decaffinated.jpg" alt="555 Caffeinated Version artwork" />
-                    </a>
-                    <div class="release-meta">
-                        <h3>555 - Decaffeinated Version</h3>
-                        <p>Single · 2025</p>
-                    </div>
-                </article>
-
-                <article class="release-card reveal">
-                    <a href="https://open.spotify.com/track/5d5SmkTY9V0cPeuwJtCmPF?si=3b4dce5647bf4583" target="_blank" rel="noopener noreferrer">
-                        <img src="/img/MarijuanaBlues.jpg" alt="Marijuana Blues artwork" />
-                    </a>
-                    <div class="release-meta">
-                        <h3>Marijuana Blues</h3>
-                        <p>Single · 2025</p>
-                    </div>
-                </article>
+            <div class="release-grid" data-cms-releases data-cms-state="loading" aria-live="polite">
+                <p class="cms-data-message">Loading music…</p>
             </div>
         </div>
     </section>
@@ -170,34 +122,13 @@
     </section>
 
     <section class="section live-section" id="live">
-        <div class="container live-grid">
-            <div class="live-poster reveal">
-                <img src="/img/Promo_JackEdge.jpg" alt="Jack Edge promo" />
+        <div class="container">
+            <div class="section-top reveal">
+                <p class="kicker">Live</p>
+                <h2>See Gaz live</h2>
             </div>
-
-            <div class="live-text">
-                <p class="kicker reveal">Live</p>
-                <h2 class="reveal">See Gaz live</h2>
-                <div class="show-block reveal">
-                    <h3>Supporting Jack Edge</h3>
-                    <p>14 August 2026</p>
-                    <p>The Castle Hotel, Manchester</p>
-                    <p>Doors open: 7:30pm</p>
-                </div>
-                <a href="https://fatso.ma/fwddl" target="_blank" rel="noopener noreferrer" class="btn btn-solid reveal">Get tickets</a>
-            </div>
-            <div class="past-performances reveal">
-                <p class="kicker past-kicker">Past performances</p>
-
-                <div class="past-show-list">
-                    <div class="past-show-item">
-                        <h3>Opening for Constant Smiles</h3>
-                        <p>11 March 2026</p>
-                        <p>Gullivers, 109 Oldham St, Manchester M4 1LW</p>
-                        <p>Doors open: 7pm</p>
-                    </div>
-
-                </div>
+            <div data-cms-performances data-layout="desktop" data-cms-state="loading" aria-live="polite">
+                <p class="cms-data-message">Loading live dates…</p>
             </div>
         </div>
     </section>
@@ -220,6 +151,7 @@
 </footer>
 
 <script src="/notification-config.js"></script>
+<script src="/content-data.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

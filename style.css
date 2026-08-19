@@ -383,6 +383,50 @@ a {
     max-width: 480px;
 }
 
+.cms-performance-list {
+    display: grid;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.live-event-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.live-event-card .live-poster img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.live-event-without-image {
+    grid-template-columns: 1fr;
+}
+
+.cms-live-empty {
+    padding: 2rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.cms-live-empty h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.cms-live-empty p:last-child,
+.cms-data-message {
+    color: var(--muted);
+}
+
+.cms-data-error {
+    color: #ff8aae;
+}
+
 .show-block {
     margin: 1.5rem 0 2rem;
     padding: 1.2rem 0;
@@ -501,6 +545,7 @@ a {
     .release-grid,
     .about-grid,
     .live-grid,
+    .live-event-card,
     .gallery-layout {
         grid-template-columns: 1fr;
     }

@@ -5,16 +5,19 @@ media:
   rename: safe
 
 content:
-  - name: test_performances
-    label: Test Performances
+  - name: performances
+    label: Performances
     type: file
-    path: test/data/performances.json
+    path: data/performances.json
     format: json
     list: true
     fields:
       - name: id
         label: ID
         type: uuid
+        description: Automatically generated internal ID. You do not need to change this.
+        options:
+          editable: false
       - name: title
         label: Performance title
         type: string
@@ -44,20 +47,23 @@ content:
         label: Promotional image
         type: image
       - name: published
-        label: Show on test page
+        label: Show on website
         type: boolean
         default: true
 
-  - name: test_releases
-    label: Test Music Releases
+  - name: releases
+    label: Music Releases
     type: file
-    path: test/data/releases.json
+    path: data/releases.json
     format: json
     list: true
     fields:
       - name: id
         label: ID
         type: uuid
+        description: Automatically generated internal ID. You do not need to change this.
+        options:
+          editable: false
       - name: title
         label: Release title
         type: string
@@ -81,21 +87,6 @@ content:
         type: string
         required: true
       - name: published
-        label: Show on test page
+        label: Show on website
         type: boolean
         default: true
-
-  - name: test_settings
-    label: Test Page Settings
-    type: file
-    path: test/data/settings.json
-    format: json
-    fields:
-      - name: heading
-        label: Page heading
-        type: string
-        required: true
-      - name: introduction
-        label: Introduction
-        type: text
-        required: true

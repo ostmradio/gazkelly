@@ -1,0 +1,47 @@
+[
+  {
+    "id": "aaf9bafd-dac2-4f45-bcd2-547de137fd18",
+    "title": "Some Stories Don't Have Happy Endings",
+    "releaseType": "Debut album",
+    "releaseDate": "2026-08-07",
+    "artwork": "/img/SomeStoriesDontHaveHappyEndings.jpg",
+    "listenUrl": "https://open.spotify.com/album/2ijFGqhEBgQ9jeB5KqhDvt",
+    "published": true
+  },
+  {
+    "id": "5141cd9e-f20d-4565-984d-15e13393064d",
+    "title": "Photogenic",
+    "releaseType": "Single",
+    "releaseDate": "2025-12-26",
+    "artwork": "/img/Photogenic.jpg",
+    "listenUrl": "https://open.spotify.com/track/3t65ZHJdxx6SIgHbYwYMH2",
+    "published": true
+  },
+  {
+    "id": "c3b507e6-44c1-493a-986c-f71542e3452a",
+    "title": "555 - Decaffeinated Version",
+    "releaseType": "Single",
+    "releaseDate": "2025-12-12",
+    "artwork": "/img/555_decaffinated.jpg",
+    "listenUrl": "https://open.spotify.com/track/4V0Dj5sNnpXsebBWUWZYNb",
+    "published": true
+  },
+  {
+    "id": "e77f0318-b6b9-42ca-b12f-559c299b9a43",
+    "title": "Marijuana Blues",
+    "releaseType": "Single",
+    "releaseDate": "2025-10-31",
+    "artwork": "/img/MarijuanaBlues.jpg",
+    "listenUrl": "https://open.spotify.com/track/5d5SmkTY9V0cPeuwJtCmPF",
+    "published": true
+  },
+  {
+    "id": "480e034d-a4a2-4df0-bf3b-10968c6d0ea4",
+    "title": "555 - Caffeinated Version",
+    "releaseType": "Single",
+    "releaseDate": "2025-08-28",
+    "artwork": "/img/555_Caffinated.jpg",
+    "listenUrl": "https://open.spotify.com/track/0hOOb2whCNq4bvLhPZ2S3V",
+    "published": true
+  }
+]

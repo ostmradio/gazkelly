@@ -1,0 +1,24 @@
+[
+  {
+    "id": "808f2ff8-f424-40c2-94e4-748d4e0c97c8",
+    "title": "Supporting Jack Edge",
+    "date": "2026-08-14T19:30",
+    "venue": "The Castle Hotel",
+    "location": "Manchester",
+    "details": "Doors open: 7:30pm",
+    "ticketUrl": "https://fatso.ma/fwddl",
+    "image": "/img/Promo_JackEdge.jpg",
+    "published": true
+  },
+  {
+    "id": "95ef30d4-5b51-4fd8-91ae-d6e20ed2f914",
+    "title": "Opening for Constant Smiles",
+    "date": "2026-03-11T19:00",
+    "venue": "Gullivers",
+    "location": "109 Oldham St, Manchester M4 1LW",
+    "details": "Doors open: 7pm",
+    "ticketUrl": "",
+    "image": "/img/Promo_Gullivers.jpg",
+    "published": true
+  }
+]
